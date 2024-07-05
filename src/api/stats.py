@@ -18,8 +18,6 @@ class Input(BaseModel):
     weight: int #lbs
     height: int #in
 
-# uvicorn src.api.server:app --host 0.0.0.0 --port 3001
-
 @router.post("/")
 async def postStats(stats: Input):
     print(stats)
