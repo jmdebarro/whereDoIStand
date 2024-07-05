@@ -22,6 +22,7 @@ class Input(BaseModel):
 
 @router.post("/")
 async def postStats(stats: Input):
+    print(stats)
 
     # Formatting input
     state = stats.state.lower().capitalize()
